@@ -1,0 +1,71 @@
+#circle_feat{
+    background-color: rgb(247, 140, 162);
+    z-index: 1;
+    border-radius: 30px 0px 0px 30px;
+}
+#inner_h1{
+    border: 5px solid #FCE9F1;
+    padding: 10px;
+}
+#headline_f{
+    color: #F1D4E5;
+    border: 5px solid #FCE9F1;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+#descrip{
+    background-color: rgb(61, 12, 17);
+    color: rgb(249, 222, 201);
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px;
+    z-index: 1;
+    margin-right: 50px;
+    width:330px;
+}
+#main_1{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+
+
+}
+#gobutton{
+    position: relative;
+    padding: 20px;
+    margin: 90px;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 35px 5px 35px 5px;
+    border: 3px solid #3D0C11;
+    background:transparent;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+
+}
+#gospan{
+    background: #D80032;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    transition: 0.5s;
+
+}
+
+#gobutton:hover #gospan {
+    width: 100%;
+    z-index: -1;
+
+}
+#gobutton:hover{
+    color: #F78CA2;
+    border-radius: 5px 35px 5px 35px;
+    border: 3px solid #3D0C11;
+    box-shadow: 0 0 20 3px  #3D0C11;
+    z-index: 10;
+}

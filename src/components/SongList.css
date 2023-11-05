@@ -1,0 +1,51 @@
+
+
+#id1 {
+     /* specify the path to your image */
+    background-size: cover; /* specify how the background image should be sized */
+    background-position: center; /* specify the position of the background image */
+    /* width: '100%'; */
+    margin: '5%' ;
+    position: relative;
+    width: 270px; /* Adjust the width of the card */
+    height: 270px; /* Adjust the height of the card */
+    filter: brightness(80%); 
+    border-radius: 20px;
+    
+}
+
+#id1:hover{
+    filter: brightness(100%); /* Decrease brightness on hover */
+  border: 2px solid #f78ca2;
+  
+  
+}
+.container audio {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    opacity: 0; /* Hide audio controls by default */
+    transition: opacity 0.7s; /* Add transition for smooth effect */
+  }
+  
+  .card:hover .container audio {
+    opacity: 1; /* Display audio controls on hover */
+  }
+  .container audio::-webkit-media-controls-panel {
+    background-color: #f78ca2;
+     /* Set the background color of the audio controls */
+
+    border-radius: 10px; /* Add border radius to create rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+  }
+  
+  .container audio::-webkit-media-controls-play-button {
+    color: #fff; /* Set the color of the play button */
+  }
+  
+  .container audio::-webkit-media-controls-volume-slider,
+  .container audio::-webkit-media-controls-mute-button {
+    color: #fff; /* Set the color of the volume controls */
+  }
