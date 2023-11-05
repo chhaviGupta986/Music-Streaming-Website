@@ -39,7 +39,7 @@
 
 //         console.log("Data being sent:", data);
 
-//         axios.post('http://localhost:1010/register', data)
+//         axios.post('https://tuning-backend.onrender.com/register', data)
 //             .then(response => {
 //                 console.log("Response from server:", response.data);
 //                 console.log("Response is:", response);
@@ -161,7 +161,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'http://localhost:1010/register', {name,username, email, password})
+        axios.post( 'https://tuning-backend.onrender.com/register', {name,username, email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Already registered"){

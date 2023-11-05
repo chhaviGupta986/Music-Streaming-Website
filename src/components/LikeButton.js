@@ -6,7 +6,7 @@ const LikeButton = ({ songId, user }) => {
   const handleLike = async () => {
     try {
       console.log("ofc",user)
-      const response = await axios.post('http://localhost:1010/api/likes/like', {songId, user });
+      const response = await axios.post('https://tuning-backend.onrender.com/api/likes/like', {songId, user });
       setLiked(!liked);
       console.log("cfjnvif",response.data); // Handle the response data as needed
     } catch (error) {

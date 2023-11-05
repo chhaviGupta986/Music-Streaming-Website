@@ -54,7 +54,7 @@ const SongList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:1010/api/songs');
+        const response = await axios.get('https://tuning-backend.onrender.com/api/songs');
         setSongs(response.data);
       } catch (error) {
         console.error('Error fetching songs:', error);

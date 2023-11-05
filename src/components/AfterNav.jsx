@@ -19,7 +19,7 @@ const AfterNav = () => {
         console.log(email)
         console.log(password)
         // Make a request to the backend to fetch the user data
-        //const response = await axios.get('http://localhost:1010/api/user/getUser', { username,name, email, password });
+        //const response = await axios.get('https://tuning-backend.onrender.com/api/user/getUser', { username,name, email, password });
         setUser({username,name, email, password }); // Set the user data in the state
         console.log(user); // Check the response data
       } catch (error) {

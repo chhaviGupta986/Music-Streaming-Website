@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:1010/";
+const baseURL = "https://tuning-backend.onrender.com/";
 
 export const validateUser = async (token) => {
   try {

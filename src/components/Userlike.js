@@ -6,7 +6,7 @@ const SongCard = ({ song,user }) => {
   
   // const handleLike = async () => {
   //   try {
-  //     await axios.post(`http://localhost:1010/api/likes/${song._id}`, { liked: true });
+  //     await axios.post(`https://tuning-backend.onrender.com/api/likes/${song._id}`, { liked: true });
   //     setLiked(true);
   //   } catch (error) {
   //     console.error('Error while updating like status', error);
@@ -58,7 +58,7 @@ const Userlike = () => {
         const email = localStorage.getItem('email');
         const password = localStorage.getItem('password');
 
-        const res = await axios.post('http://localhost:1010/api/user/getUser', { username, email, password });
+        const res = await axios.post('https://tuning-backend.onrender.com/api/user/getUser', { username, email, password });
         setUser(res.data);
       } catch (error) {
         console.error('Error fetching songs:', error);
@@ -77,7 +77,7 @@ const Userlike = () => {
     const fetchLikedSongs = async () => {
       try {
         console.log("here")
-        const response = await axios.get(`http://localhost:1010/api/likes/user/${user._id}`,{user});
+        const response = await axios.get(`https://tuning-backend.onrender.com/api/likes/user/${user._id}`,{user});
         setLikedSongs(response.data);
         console.log("usre",user)
         console.log("hello this is user like songs",response.data)

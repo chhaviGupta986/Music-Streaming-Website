@@ -15,7 +15,7 @@
 //     const handleSubmit = (event) => {
 //         event.preventDefault();
         
-//         axios.post( 'http://localhost:1010/login', {email, password})
+//         axios.post( 'https://tuning-backend.onrender.com/login', {email, password})
 //         .then(result => {
 //             console.log(result);
 //             if(result.data.message === 'Success'){
@@ -125,7 +125,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'http://localhost:1010/login', {email, password})
+        axios.post( 'https://tuning-backend.onrender.com/login', {email, password})
         .then(result => {
             console.log(result);
             if(result.data.message === 'Success'){

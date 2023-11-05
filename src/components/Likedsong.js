@@ -5,7 +5,7 @@ const SongCard = ({ song,user }) => {
 
 // const handleLike = async () => {
 //   try {
-//     await axios.post(`http://localhost:1010/api/likes/${song._id}`, { liked: true });
+//     await axios.post(`https://tuning-backend.onrender.com/api/likes/${song._id}`, { liked: true });
 //     setLiked(true);
 //   } catch (error) {
 //     console.error('Error while updating like status', error);
@@ -48,7 +48,7 @@ const Likedsong = ({ user }) => {
   useEffect(() => {
     const fetchLikedSongs = async () => {
       try {
-        const response = await axios.get("http://localhost:1010/api/likes/user/:userId");
+        const response = await axios.get("https://tuning-backend.onrender.com/api/likes/user/:userId");
         setLikedSongs(response.data);
         console.log("hbdhcd",response.data)
       } catch (error) {

@@ -88,7 +88,7 @@ const Upload = () => {
     e.preventDefault();
     try {
       console.log(inputs)
-     await axios.post('http://localhost:1010/api/songs', { ...inputs });
+     await axios.post('https://tuning-backend.onrender.com/api/songs', { ...inputs });
      window.location.reload()
     } catch (error) {
     console.error("dcnh",error);
