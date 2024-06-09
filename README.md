@@ -1,3 +1,4 @@
+## Tuning: Music Player
 ![image](https://github.com/chhaviGupta986/tuning_frontend/assets/94625954/e9b52452-510f-41e8-bd7a-67f17ac905f0)
 
 ![image](https://github.com/chhaviGupta986/tuning_frontend/assets/94625954/7a4e67af-1685-4c25-be60-09e3dde3a2b2)
