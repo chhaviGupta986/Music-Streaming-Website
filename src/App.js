@@ -31,7 +31,8 @@ const App = () => {
       <Route path='/login' element={<Login setLoginUser={setLoginUser} />} />
       <Route path='/logout' element={<Logout />} />
       <Route path='/register' element={<Register />} />
-      <Route path="/dashboard" element = {<AfterNav user={loginUser} />} />
+      {/* <Route path="/dashboard" element = {<AfterNav user={loginUser} />} /> */}
+      <Route path="/dashboard" element = {<Dashboard/>} />
       <Route path="/profile" element = {<Profile />} />
       <Route path="/addmusic" element = {<AddMusic />} />
       <Route path="/liked" element = {<AfterSongList />} />

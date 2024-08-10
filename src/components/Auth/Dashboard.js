@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../Navbar';
 import Carousel from '../Carousel';
 import Footer from '../Footer';
-
+import AfterNav from '../AfterNav';
+import SongList from '../SongList';
 const Dashboard = () => {
   const [userData, setUserData] = useState(null);
   useEffect(() => {
@@ -12,6 +13,7 @@ const Dashboard = () => {
     const password = localStorage.getItem('password');
     setUserData({username, email, password });
 }, []);
+
 
 //   useEffect(() => {
 //     // Make an API call to fetch user data
@@ -23,26 +25,24 @@ const Dashboard = () => {
 //   }, []);
 
   return (<>
-    <div>
-      <h2>Welcome to the Dashboard</h2>
-      {userData ? (
-        <div>
-          <p>
-            <strong>Username:</strong> {userData.username}
-          </p>
-          <p>
-            <strong>Email:</strong> {userData.email}
-          </p>
-          {/* Add other user information here */}
-        </div>
+  <AfterNav/>
+
+    <div style={{backgroundColor:'black'}}>
+    <Carousel />
+{/* <AfterSongList  /> */}
+<div className='text-white pt-4 pb-2 fs-2 text-center'>
+      <span>Welcome Back {userData ? (
+        <span >
+        {userData.username} !</span>
+          
       ) : (
         <p>Loading user data...</p>
+        
       )}
+      </span>
+
     </div>
-    <div style={{backgroundColor:'black'}}>
-    <Navbar />
-     <Carousel />   
-    
+<SongList  />
      <Footer />
      </div>
      </>

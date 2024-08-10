@@ -6,34 +6,35 @@ import Footer from './Footer';
 import AfterSongList from './AfterSongList';
 import SongList from './SongList';
 const AfterNav = () => {
-  const [user, setUser] = useState();
+  // const [user, setUser] = useState();
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const username = localStorage.getItem('username');
-        const name = localStorage.getItem('name');
-        const email = localStorage.getItem('email');
-        const password = localStorage.getItem('password');
-        console.log(username)
-        console.log(email)
-        console.log(password)
-        // Make a request to the backend to fetch the user data
-        //const response = await axios.get('https://tuning-backend.onrender.com/api/user/getUser', { username,name, email, password });
-        setUser({username,name, email, password }); // Set the user data in the state
-        console.log(user); // Check the response data
-      } catch (error) {
-        console.error('Error fetching user data:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     try {
+  //       const username = localStorage.getItem('username');
+  //       const name = localStorage.getItem('name');
+  //       const email = localStorage.getItem('email');
+  //       const password = localStorage.getItem('password');
+  //       console.log(username)
+  //       console.log(email)
+  //       console.log(password)
+  //       // Make a request to the backend to fetch the user data
+  //       //const response = await axios.get('https://tuning-backend.onrender.com/api/user/getUser', { username,name, email, password });
+  //       setUser({username,name, email, password }); // Set the user data in the state
+  //       console.log(user); // Check the response data
+  //     } catch (error) {
+  //       console.error('Error fetching user data:', error);
+  //     }
+  //   };
 
-    fetchUser();
-  }, []);
-  if (!user) {
-    return <div>Loading...</div>; // Add a loading state or spinner
-  }
+  //   fetchUser();
+  // }, []);
+  // if (!user) {
+  //   return <div>Loading...</div>; // Add a loading state or spinner
+  // }
   return (
-    <>
+    // <>
+    <div style={{backgroundColor:'black'}}>
     <nav className="navbar navbar-expand-lg shadow-lg p-4" style={{ backgroundColor: 'black' }}>
   <div className="container-fluid" > 
   <span class="material-symbols-outlined" style={{color:'#FFFFFF',fontSize:'70px',color:'#F78CA2'}}
@@ -46,13 +47,19 @@ const AfterNav = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item px-3">
-          <a className="nav-link active" aria-current="page" href="/dashboard" style={{color:'#F78CA2',fontSize:'20px'}}>Home</a>
+          <Link className="nav-link active" aria-current="page" to="/dashboard" style={{ color: '#F78CA2', fontSize: '20px' }}>
+          Home
+          </Link>
         </li>
         <li className="nav-item px-3">
-          <a className="nav-link" href='/contact' style={{color:'#F78CA2',fontSize:'20px'}}>Your Likes</a>
+           <Link className="nav-link" aria-current="page" to="/contact" style={{ color: '#F78CA2', fontSize: '20px' }}>
+          Your Likes
+          </Link>
         </li>
         <li className="nav-item px-3">
-          <a className="nav-link" href='/addmusic' style={{color:'#F78CA2',fontSize:'20px'}}>Upload </a>
+          <Link className="nav-link" aria-current="page" to="/addmusic" style={{ color: '#F78CA2', fontSize: '20px' }}>
+          Upload
+          </Link>
         </li>
       </ul>
       <div className='buttons d-flex justify-content-center'>
@@ -65,12 +72,12 @@ const AfterNav = () => {
 </nav>
       
 
-
+{/* 
 <Carousel />
-<AfterSongList  />
-<Footer />
+<SongList  />
+<Footer /> */}
 
-    </>
+</div>
   )
 }
 

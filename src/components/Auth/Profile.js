@@ -58,7 +58,7 @@ const Profile = () => {
  <div className="bg-black">
   <div >
         <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <h1 id='headline_f' ><h2>Welcome to Your Profile!</h2></h1>
+            <h1 id='headline_f' ><h2>Welcome to Your Profile</h2></h1>
         </span>
             
     <div>
