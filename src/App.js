@@ -11,6 +11,7 @@ import Login from './components/Auth/login';
 import Registration from './components/Auth/registration';
 import Dashboard from './components/Auth/Dashboard';
 import AfterNav from './components/AfterNav';
+import YourLikes from './components/YourLikes';
 import Profile from './components/Auth/Profile';
 import AddMusic from './components/Addmusic';
 import AfterSongList from './components/AfterSongList';
@@ -37,6 +38,7 @@ const App = () => {
       <Route path="/addmusic" element = {<AddMusic />} />
       <Route path="/liked" element = {<AfterSongList />} />
       <Route path="/likedsongs" element = {<Userlike />} />
+      <Route path="/likes" element = {<YourLikes/>} />
 
   
       

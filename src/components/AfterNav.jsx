@@ -52,7 +52,7 @@ const AfterNav = () => {
           </Link>
         </li>
         <li className="nav-item px-3">
-           <Link className="nav-link" aria-current="page" to="/contact" style={{ color: '#F78CA2', fontSize: '20px' }}>
+           <Link className="nav-link" aria-current="page" to="/likes" style={{ color: '#F78CA2', fontSize: '20px' }}>
           Your Likes
           </Link>
         </li>
