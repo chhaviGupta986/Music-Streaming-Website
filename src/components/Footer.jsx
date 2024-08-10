@@ -82,87 +82,23 @@ color:'rgb(247, 140, 162)'}}>
           <h5 class="text-uppercase">FOLLOW US ON</h5>
 
           <ul class="list-unstyled mb-0">
-
             <li>
-              <a  href="https://www.facebook.com/bhavya.verma.9849912?mibextid=ZbWKwL" class="text-white">Facebook</a>
+              <a href="https://www.instagram.com/chhavigupta986/" class="text-white">Instagram</a>
             </li>
             <li>
-              <a href="https://instagram.com/vermabhavya183?igshid=ZDdkNTZiNTM=" class="text-white">Instagram</a>
+              <a href="https://www.linkedin.com/in/chhavi-gupta-782a38200/" class="text-white">Linkedin</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/bhavya-verma-754983247" class="text-white">Linkedin</a>
-            </li>
-            <li>
-              <a href="https://github.com/bhaavvya" class="text-white">Github</a>
+              <a href="https://github.com/chhaviGupta986" class="text-white">Github</a>
             </li>
           </ul>
         </div>
-
-        {/* <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
- 
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div> */}
        
       </div>
  
     </section>
 
   </div>
-
-
-
 
 </footer>
     </>
