@@ -134,7 +134,7 @@ const Login = () => {
                 localStorage.setItem('username', username);
                 localStorage.setItem('name', name);
                 localStorage.setItem('email', email);
-                localStorage.setItem('password', password);
+                // localStorage.setItem('password', password);
                 console.log(localStorage.setItem('email', email))
                 navigate('/dashboard');
 

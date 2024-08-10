@@ -10,8 +10,8 @@ const Dashboard = () => {
     // Retrieve user data from localStorage
     const username = localStorage.getItem('username');
     const email = localStorage.getItem('email');
-    const password = localStorage.getItem('password');
-    setUserData({username, email, password });
+    const name= localStorage.getItem('name');
+    setUserData({username, email, name });
 }, []);
 
 
@@ -33,7 +33,7 @@ const Dashboard = () => {
 <div className='text-white pt-4 pb-2 fs-2 text-center'>
       <span>Welcome Back {userData ? (
         <span >
-        {userData.username} !</span>
+        {userData.name} !</span>
           
       ) : (
         <p>Loading user data...</p>
