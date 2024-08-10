@@ -117,7 +117,7 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
     const [email, setEmail] = useState();
     const [username, setUsername] = useState();
-    const [Name, setName] = useState();
+    const [name, setName] = useState();
     const [password, setPassword] = useState();
     const [userData, setUserData] = useState();
     const navigate = useNavigate();
@@ -132,6 +132,7 @@ const Login = () => {
                 console.log("Login Success");
                 alert('Login successful!')
                 localStorage.setItem('username', username);
+                localStorage.setItem('name', name);
                 localStorage.setItem('email', email);
                 localStorage.setItem('password', password);
                 console.log(localStorage.setItem('email', email))

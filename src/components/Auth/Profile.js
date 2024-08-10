@@ -55,24 +55,26 @@ const Profile = () => {
     </div>
   </div>
 </nav>
+ <div className="bg-black">
   <div >
-        <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',margin:'25px'}}>
-            <h1 id='headline_f' ><h2>Welcome to Your profile</h2></h1>
+        <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <h1 id='headline_f' ><h2>Welcome to Your Profile!</h2></h1>
         </span>
             
     <div>
       
       {userData ? (
-        <div className='text-white'>
-          <p>
-            <strong >Username:</strong> {userData.username}
-          </p>
-          <p>
-            <strong >Name:</strong> {userData.name}
-          </p>
-          <p>
-            <strong>Email:</strong> {userData.email}
-          </p>
+        <div style={{fontFamily:'Philosopher,Ubuntu', color:'rgb(247, 140, 162)'}} 
+        className='text-center fs-3 mt-3 pb-5'>
+        <div>
+    <strong>Username:</strong> {userData.username}
+  </div>
+  <div>
+    <strong>Name:</strong> {userData.name}
+  </div>
+  <div>
+    <strong>Email:</strong> {userData.email}
+  </div>
           {/* Add other user information here */}
         </div>
       ) : (
@@ -80,7 +82,8 @@ const Profile = () => {
       )}
     </div>
     
-     </div>
+  </div>
+  </div>
      <Footer />
      </>
   );

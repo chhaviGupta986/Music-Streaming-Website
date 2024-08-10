@@ -4,7 +4,7 @@ const Footer = () => {
     <>
 
 <footer class="text-center " style={{backgroundColor:'rgb(61, 12, 17)',
-color:'rgb(247, 140, 162)',marginTop:'30px'}}>
+color:'rgb(247, 140, 162)'}}>
 
   <div class="container p-4">
 
